@@ -8,7 +8,7 @@ audio_files = [f for f in os.listdir('.') if os.path.isfile(f) and f.lower().end
 for i, file in enumerate(audio_files, 1):
     print(f"{i}. {file}")
 
-file_choice = input("file: ")
+file_choice = input("file:")
 selected_file = audio_files[int(file_choice) - 1]
 
 base_name_input = input("name: ")
